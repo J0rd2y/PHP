@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDV341 Intro PHP DMACC Web Development</title>
+</head>
+
+<body>
+<h1>WDV341 Intro PHP</h1>
+<h2>OOP Function - Accessors and Mutators (Getters and Setters)</h2>
+<p>Functions or Methods are critical when using OOP PHP.  One of the first uses is to create methods to set the value of variables stored in a class or object. These are called Mutator Methods or &quot;Setters&quot; since they set or change the value in the variable.  Accessor methods or Getters are used to pull the value of the variable into the program. They do not change anything in the class or object their job is to find the value and make it available outside the object. </p>
+<p><strong>Mutator Method / Set Method / Setters </strong>This type of method is defined within a Class. It is used to set the value of a property/variable within the object. These methods can be very simple or they can be quite complex requiring extensive programming in order to find and validate the value before being stored in the property. These methods almost always required an input parameter with the value to be stored.</p>
+<p><strong>Accessor Method / Get Method / Getters</strong> This type of method is defined within a Class. It is used to retrieve the value from a property in the object. These methods can be as simple as returning the variable value or they can include extensive processing in order to prepare the value for use outside the object. These methods often include a 'return' to handle the desired value or an output process that produces the desired value.</p>
+<p><strong>Example:</strong></p>
+<p>Class Product {</p>
+<blockquote>
+  <p>	$productName;	//property holding the name of the product </p>
+</blockquote>
+<p>&nbsp;</p>
+<blockquote>
+  <p>function setProductName($inProductName) {</p>
+  <blockquote>
+    <p>	$productName = $inProductName; //simple assigment through the Set method</p>
+  </blockquote>
+  <p>}</p>
+  <p>function getProductName( ) {</p>
+  <blockquote>
+    <p>	return $productName; //sends	the value stored in this object/variable out to the program</p>
+  </blockquote>
+  <p>}</p>
+</blockquote>
+<p>}//end Product Class</p>
+</body>
+</html>
